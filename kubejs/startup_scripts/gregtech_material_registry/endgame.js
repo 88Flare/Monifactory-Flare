@@ -41,6 +41,7 @@ GTCEuStartupEvents.registry('gtceu:material_icon_set', event => {
     event.create('infinity').parent(GTMaterialIconSet.SHINY)
     event.create('eltz').parent(GTMaterialIconSet.SHINY)
     event.create('monium').parent(GTMaterialIconSet.SHINY)
+    event.create('netherite').parent(GTMaterialIconSet.METALLIC)
     event.create('dilithium').parent(GTMaterialIconSet.DULL)
 })
 
@@ -78,8 +79,8 @@ GTCEuStartupEvents.registry('gtceu:material', event => {
     event.create('activated_netherite')
         .ingot()
         .element(GTElements.get("activated_netherite"))
-        .color(0x4C484C)
-        .iconSet('dull')
+        .color(0xffffff)
+        .iconSet('netherite')
         .cableProperties(GTValues.V[GTValues.UEV], 16, 0, true)
         .fluidPipeProperties(11000, 8500, true, false, true, true)
         .flags(GTMaterialFlags.GENERATE_PLATE, GTMaterialFlags.GENERATE_ROD, GTMaterialFlags.GENERATE_FRAME, GTMaterialFlags.GENERATE_DENSE, GTMaterialFlags.GENERATE_FINE_WIRE, GTMaterialFlags.GENERATE_ROTOR, GTMaterialFlags.GENERATE_SPRING)

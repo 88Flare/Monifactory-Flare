@@ -19,18 +19,18 @@ GTCEuServerEvents.fluidVeins(event => {
         vein.maximumYield(250)
         vein.depletionAmount(1)
         vein.depletionChance(50)
-        vein.depletedYield(20)
+        vein.depletedYield(80)
     })
 
     event.add('kubejs:void/oil', vein => {
         vein.dimensions('javd:void')
         vein.fluid(() => Fluid.of("gtceu:oil").fluid)
-        vein.weight(20)
+        vein.weight(15)
         vein.minimumYield(200)
         vein.maximumYield(250)
         vein.depletionAmount(1)
         vein.depletionChance(50)
-        vein.depletedYield(20)
+        vein.depletedYield(80)
     })
 
 

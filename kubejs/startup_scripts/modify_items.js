@@ -20,7 +20,7 @@ itemRarityMap.put("functionalstorage:netherite_upgrade", createRarity("stainless
 ItemEvents.modification(event => {
 
     // Make it so Sugar Cane can be used as fuel in the Furnace
-    event.modify('minecraft:sugar_cane', item => { item.burnTime = 300 })
+    event.modify("minecraft:sugar_cane", item => { item.burnTime = 300 })
 
 
     // Make some items glint like enchanted items
@@ -50,18 +50,18 @@ ItemEvents.modification(event => {
 
 
     // Increase the maximum stack size of Ender Pearls up to 64
-    event.modify('minecraft:ender_pearl', item => {
+    event.modify("minecraft:ender_pearl", item => {
         item.maxStackSize = 64
     })
 
 
     // Make Infinity and Ultimate tools work as unbreakable crafting tools
     const toolTypes = [
-        'file',
-        'hammer',
-        'screwdriver',
-        'wrench',
-        'wire_cutter'
+        "file",
+        "hammer",
+        "screwdriver",
+        "wrench",
+        "wire_cutter"
     ]
     toolTypes.forEach(type => {
         event.modify(`kubejs:infinity_${type}`, item => { item.craftingRemainder = Item.of(`kubejs:infinity_${type}`).item })

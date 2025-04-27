@@ -1,0 +1,6 @@
+{
+    "parent": "gtceu:block/cube/tinted/all_0",
+    "textures": {
+        "layer0": "gtceu:block/material_sets/netherite/frame_gt"
+    }
+}
